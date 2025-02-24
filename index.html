@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV12J6EV5F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BV12J6EV5F');
+    </script>
+    
+    <title>Taskflow - Streamline Your Day</title>
+    
+    <!-- Social Sharing Meta Tags -->
+    <meta property="og:title" content="Taskflow - Streamline Your Day">
+    <meta property="og:description" content="Effortlessly manage your tasks with Taskflow - the modern, intuitive task management tool">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="Taskflow - Streamline Your Day">
+    <meta name="twitter:description" content="Effortlessly manage your tasks with Taskflow - the modern, intuitive task management tool">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1>TaskFlow</h1>
+            <span class="header-subtitle">Streamline your day</span>
+        </div>
+        <p class="subtitle">A <a href="https://www.linkedin.com/in/maartenbrondijk/" target="_blank">Maarten Brondijk</a> app</p>
+    </header>
+    <main class="container">
+        <div class="input-container">
+            <input type="text" id="todoInput" placeholder="What needs to be done?">
+            <select id="projectSelect">
+                <option value="">Select Project</option>
+            </select>
+            <button class="add-project-btn" onclick="addNewProject()">
+                <i class="fas fa-plus"></i> New Project
+            </button>
+            <button class="add-btn" onclick="addTodo()">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+        </div>
+
+        <div class="projects-container" id="projectsContainer">
+            <!-- Project columns will be rendered here -->
+        </div>
+
+        <div class="completed-section">
+            <div class="completed-header" onclick="toggleCompletedTasks()">
+                <h2>Completed Tasks <span class="project-counter" id="completedCounter"></span></h2>
+                <span id="completedToggle">▼</span>
+            </div>
+            <div id="completedTasks" class="completed-tasks">
+                <!-- Completed tasks will be rendered here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
+
