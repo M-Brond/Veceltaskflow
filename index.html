@@ -1,40 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ... (previous head content) ... -->
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BV12J6EV5F"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-BV12J6EV5F');
-    </script>
-    
-    <title>Taskflow - Streamline Your Day</title>
-    
-    <!-- Social Sharing Meta Tags -->
-    <meta property="og:title" content="Taskflow - Streamline Your Day">
-    <meta property="og:description" content="Effortlessly manage your tasks with Taskflow - the modern, intuitive task management tool">
-    <meta property="og:type" content="website">
-    <meta name="twitter:title" content="Taskflow - Streamline Your Day">
-    <meta name="twitter:description" content="Effortlessly manage your tasks with Taskflow - the modern, intuitive task management tool">
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Add this line for color picker support -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -46,6 +16,10 @@
             <span class="header-subtitle">Streamline your day</span>
         </div>
         <p class="subtitle">A <a href="https://www.linkedin.com/in/maartenbrondijk/" target="_blank">Maarten Brondijk</a> app</p>
+        <!-- Add dark mode toggle -->
+        <button id="darkModeToggle" class="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
     <main class="container">
         <div class="input-container">
@@ -76,8 +50,13 @@
         </div>
     </main>
 
+    <!-- Add this before your custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    
     <!-- Custom JavaScript -->
     <script src="js/app.js"></script>
 </body>
 </html>
+
+
 
